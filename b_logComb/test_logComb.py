@@ -18,7 +18,7 @@ def test_or16():
     run(vhdl_sources=[source("or16.vhd")], 
         toplevel="or16",
         python_search=[os.path.join(os.path.dirname(__file__), 'test_cases')],
-        module=1testcase='tb_or16', 
+        module='tb_or16', 
         toplevel_lang="vhdl")
     
 def test_not16():
