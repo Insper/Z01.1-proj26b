@@ -1,4 +1,4 @@
-pytest
-pytest-sugar
-cocotb
-cocotb-test
+pytest==7.4.4
+pytest-sugar==1.0.0
+cocotb==1.8.1
+cocotb-test==0.2.5
