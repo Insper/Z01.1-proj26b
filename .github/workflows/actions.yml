@@ -93,6 +93,7 @@ jobs:
         SIM=ghdl pytest -s --ignore-glob="*Assembly*"
         
     - name: teste Assembly
+      if: always()
       run: |
         cd f_Assembly/
         pytest -s        
