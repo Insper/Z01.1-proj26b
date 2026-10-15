@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 
 jobs:
-  auditoria:
+  integracao:
     runs-on: ubuntu-latest
 
     steps:
@@ -65,7 +65,7 @@ jobs:
           python -m pytest -v f_Assembly/tests/CICD.py
           
   build:
-    #needs: auditoria
+    #needs: integracao
     runs-on: ubuntu-24.04
     timeout-minutes: 10
     
@@ -90,6 +90,10 @@ jobs:
       
     - name: teste vhdl
       run: |
-        SIM=ghdl pytest -s
+        SIM=ghdl pytest -s --ignore-glob="*Assembly*"
         
+    - name: teste Assembly
+      run: |
+        cd f_Assembly/
+        pytest -s        
     
