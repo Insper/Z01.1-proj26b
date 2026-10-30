@@ -82,8 +82,11 @@ public class SymbolTableTest {
         assertTrue(table.contains("R15"));
         assertEquals(15, table.getAddress("R15"));
         
-        assertTrue(table.contains("SCREEN"));
-        assertEquals(16384, table.getAddress("SCREEN"));
+        assertTrue(table.contains("LED"));
+        assertEquals(16384, table.getAddress("LED"));
+         
+        assertTrue(table.contains("SW"));
+        assertEquals(16385, table.getAddress("SW"));
         
         assertTrue(table.contains("SP"));
         assertEquals(0, table.getAddress("SP"));
