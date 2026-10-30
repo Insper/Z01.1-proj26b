@@ -90,11 +90,18 @@ jobs:
       
     - name: teste vhdl
       run: |
-        SIM=ghdl pytest -s --ignore-glob="*Assembly*"
+        SIM=ghdl pytest -s --ignore-glob="*Assembl*"
         
     - name: teste Assembly
       if: always()
       run: |
         cd f_Assembly/
         pytest -s        
+        
+    - name: teste Assembler
+      if: always()
+      run: |
+        cd ../g_Assembler/
+        pytest -k genJAR
+        pytest -s --ignore-glob="*genJAR*"
     
