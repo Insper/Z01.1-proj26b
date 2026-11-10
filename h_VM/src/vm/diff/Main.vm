@@ -1,0 +1,13 @@
+// ---------------------------------  
+// Queremos fazer um programa em VM que calcule as diferenças de um vetor de números que se encontra na pilha.
+//
+// A memória `temp 0` armazena a quantidade de números no vetor.
+// ---------------------------------
+
+function Main.main 0
+
+
+
+// nao deve tirar isso!
+label while2
+    goto while2

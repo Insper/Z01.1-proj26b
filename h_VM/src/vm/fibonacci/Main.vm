@@ -1,0 +1,17 @@
+// ---------------------------------  
+// A sequência de Fibonacci é uma sequência de números inteiros, 
+// onde cada termo subsequente corresponde à soma dos dois termos anteriores. 
+// A sequência normalmente começa com "0" e "1" e tem aplicações em diversas 
+// áreas como mercado financeiro, ciências da computação e fenômenos da natureza.
+//
+// Neste caso, solicita-se que seja escrito um programa usando a linguagem de máquina 
+// virtual de pilha para escrever os 11 primeiros números da sequência de Fibonacci na pilha.
+// ---------------------------------
+
+function Main.main 0
+
+
+
+// nao deve tirar isso!
+label while2
+    goto while2

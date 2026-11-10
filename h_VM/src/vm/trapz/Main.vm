@@ -1,0 +1,24 @@
+// ---------------------------------
+// "Em matemática, em especial na análise numérica, existe uma grande família de algoritmos, 
+// cujo principal objetivo é aproximar o valor de uma dada integral definida de uma função 
+// sem o uso de uma expressão analítica para a sua primitiva. Normalmente, estes métodos 
+// adotam as seguintes três fases: decomposição do domínio em pedaços; integração aproximada 
+// da função de cada pedaço e soma dos resultados numéricos obtidos." 
+// [`Fonte: https://pt.wikipedia.org/wiki/Integração_numérica`](https://pt.wikipedia.org/wiki/Integração_numérica)
+//    
+// Deseja-se criar uma função (`trapz`) usando a linguagem de máquina virtual de pilha para 
+// calcular a área de um trapézio, que pode ser utilizada para calcular a integral numérica de uma curva.  
+// ---------------------------------
+
+function Main.main 0
+
+push constant 1
+push constant 2
+push constant 2
+push constant 4
+call trapz 4
+
+
+// nao deve tirar isso!
+label while2
+    goto while2
