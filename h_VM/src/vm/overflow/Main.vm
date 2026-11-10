@@ -1,0 +1,16 @@
+// ---------------------------------  
+// A versão do computador Z01.1 que foi montada nos projetos não possui um flag de overflow para verificar o resultado de uma soma. Assim, pretende-se realizar esse controle utilizando software.
+//
+// Crie um programa em Linguagem de Máquina Virtual de Pilha que efetue a soma dos números armazenados na posições `temp 0` e `temp 1` guardando o resultado na `temp 2`. 
+// Verifique se ocorreu overflow salvando '1' na `temp 3` caso tenha ocorrido ou salvando '0' na `temp 3` em caso negativo.
+//
+// Dica: ocorre overflow se a soma de dois números positivos resultar em um número negativo ou se a soma de dois números negativos resultar em um número positivo.
+// ---------------------------------
+
+function Main.main 0
+
+
+
+// nao deve tirar isso!
+label while2
+    goto while2

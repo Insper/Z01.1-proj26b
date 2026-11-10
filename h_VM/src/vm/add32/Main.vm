@@ -1,0 +1,18 @@
+// ---------------------------------  
+// Queremos realizar uma operação matemática da soma de dois núemros de 32 bits.
+//
+// Considere que os 16 bits menos significativos de um número W estejam armazenados na 'temp 0' e os 16 bits mais significativos estejam armazenados na 'temp 1'. 
+// Considere também que os 16 bits menos significativos de um número T estejam armazenados na 'temp 2' e os 16 bits mais significativos estejam armazenados na 'temp 3'. 
+// 
+// Crie uma função em linguagem de máquina que **detecta** o vaium da soma dos 16 bits menos significativos.
+//
+// Implemente a soma de 32 bits no arquivo main, considerando o vaium, e salvo os 16 bits menos significativos do na 'temp 4' e os 16 bits mais significativos na 'temp 5'.
+// ---------------------------------
+
+function Main.main 0
+
+
+
+// nao deve tirar isso!
+label while2
+    goto while2

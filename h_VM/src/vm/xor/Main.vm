@@ -1,0 +1,14 @@
+// ---------------------------------  
+// Deseja-se criar uma função (`xor`) usando a linguagem de máquina virtual de pilha para calcular a operação lógica xor.
+// ---------------------------------
+
+function Main.main 0
+
+push constant 21845
+push constant 255
+call xor 2
+
+
+// nao deve tirar isso!
+label while2
+    goto while2

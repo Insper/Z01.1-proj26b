@@ -1,0 +1,12 @@
+// ---------------------------------  
+// Faça um código em VM cujo objetivo é inverter a ordem dos últimos 3 elementos da pilha.
+//
+// ---------------------------------
+
+function Main.main 0
+
+
+
+// nao deve tirar isso!
+label while2
+    goto while2

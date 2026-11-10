@@ -1,0 +1,19 @@
+-- Elementos de Sistema - INSPER.edu.br
+-- Rafael Corsi
+-- Adaptado por Renan Trevisoli
+
+WIDTH=16;
+DEPTH=30;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+        0 : 0000000100000000;
+        5 : 0000000000001010;
+        6 : 0101000000000000;
+        7 : 0000000000000101;
+        8 : 0010100000000000;
+        9 : 0000000000000000;
+        10 : 0000000000000000;
+END;

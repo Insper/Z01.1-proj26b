@@ -1,0 +1,17 @@
+// ---------------------------------  
+// Considere um vetor de 10 valores armazenados na pilha.
+//
+// Escreva um programa em VM que remova um valor do vetor. 
+// A posição do valor a ser removido está indicada na temp 0. 
+// Considere que o valor indicado em temp 0 sempre indica um posição válida dentro do vetor.
+//
+// Considere que a primeira posição do vetor corresponde ao index "1"
+// ---------------------------------
+
+function Main.main 0
+
+
+
+// nao deve tirar isso!
+label while2
+    goto while2
