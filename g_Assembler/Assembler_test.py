@@ -1,6 +1,7 @@
 # Adapted from https://github.com/cocotb/cocotb/blob/master/examples/doc_examples/quickstart/test_my_design.py
 
 import pytest
+import shutil
 
 import os,sys,argparse, subprocess, re
 from os.path import dirname, abspath
