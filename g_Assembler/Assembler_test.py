@@ -219,12 +219,12 @@ def assemblerFile(name="add"):
     return error, log  
 
 def genJAR(f):
-    comando = ["mvn", "-f", str(f), "package", "-q", "-e"]
+    comando = [shutil.which("mvn") or "mvn", "-f", str(f), "package", "-q", "-e"]
     resultado = subprocess.run(comando, capture_output=True, text=True, check=True)
     return resultado
     
 def test_genJAR():
-    f = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'Assembler/')    
+    f = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'Assembler/pom.xml')    
     try:
         resultado = genJAR(f)
         assert resultado.returncode == 0
