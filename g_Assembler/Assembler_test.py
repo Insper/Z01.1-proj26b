@@ -28,9 +28,9 @@ def alu(x,y, code):
     elif code == "110001":
         return ~y
     elif code == "001111":
-        return (65536-x) if (x!= 0) else 0  #-x
+        return np.uint16(65536-np.uint32(x)) if (x!= 0) else 0  #-x
     elif code == "110011":
-        return (65536-y) if (y!= 0) else 0  #-y
+        return np.uint16(65536-np.uint32(y)) if (y!= 0) else 0  #-y
     elif code == "011111":
         return (x+1) if (x < 65535) else 0  #x+1
     elif code == "110111":
@@ -42,9 +42,9 @@ def alu(x,y, code):
     elif code == "000010":
         return (x+y) if ( (np.uint32(x)+np.uint32(y)) <= 65535) else (np.uint32(x)+np.uint32(y)-65536)  #x+y
     elif code == "010011":
-        return (x-y) if (x >= y) else (65536-(y-x))  #x-y
+        return (x-y) if (x >= y) else np.uint16(65536-np.uint32(y-x))  #x-y
     elif code == "000111":
-        return (y-x) if ( y >= x) else (65536-(x-y))  #y-x
+        return (y-x) if ( y >= x) else np.uint16(65536-np.uint32(x-y))  #y-x
     elif code == "000000":
         return x&y
     elif code == "010101":
@@ -62,8 +62,8 @@ def run_CPU(name="add", nTests=1, sTime=100):
     if os.path.isfile(mif):
         # simulate
         for test in range(0, int(nTests)):
-            ramIn = "tests/" + name + "/" + name +"{}".format(test)+ "_in.mif"
-            ramTest = "tests/" + name + "/" + name +"{}".format(test)+ "_tst.mif"
+            ramIn = "../f_Assembly/tests/" + name + "/" + name +"{}".format(test)+ "_in.mif"
+            ramTest = "../f_Assembly/tests/" + name + "/" + name +"{}".format(test)+ "_tst.mif"
 
             RAM = [0] * (16*1024+4800+2)
             ROM = [0] * 32*1024
@@ -195,9 +195,9 @@ def assemblerFile(name="add"):
     #adapted from Rafael Corsi
     error = 0
     
-    jar = "jar/Z01-Assembler.jar"
+    jar = "Assembler/Z01-Assembler.jar"
     pwd = dirname(abspath(__file__))
-    nasm = pwd+"/../Assembly/src/"
+    nasm = pwd+"/../f_Assembly/src/"
     hack = pwd+"/bin/hack/"
     
     nHack = hack+name+".hack"
