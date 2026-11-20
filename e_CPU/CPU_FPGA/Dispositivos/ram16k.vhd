@@ -29,7 +29,7 @@ begin
         	variable cache: MEM := MEM16kX16;     	
 
 	begin
-		if rising_edge(clock) then
+		if falling_edge(clock) then
 			if wren = '1' then
 				cache( (to_integer(unsigned( address )))  ) := data;
 			end if;
